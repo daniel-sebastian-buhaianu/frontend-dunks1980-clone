@@ -1,18 +1,18 @@
+* { margin: 0; padding: 0; }
+
 body {
-	margin: 0;
-	padding: 0;
 	background-color: #1d1d20;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14.5px;
 	color: rgb(209, 209, 209);
 }
 
-p { margin: 0; line-height: 1.5em; }
+p { line-height: 1.5em; }
 
 a { 
 	color: rgb(209, 209, 209);
 	text-decoration: none;
-	border: 0.5em solid #498f87;
+	border: 0.1em solid #498f87;
 	border-left: 0;
 	border-top: 0;
 	border-right: 0;
@@ -32,6 +32,17 @@ nav {
 
 section { margin: 0.5em 0 5em 1.5em; }
 
+footer {
+	margin-bottom: 1em;
+}
+
+footer > p{
+	text-align: center;
+}
+
+/* ================================================================================================================================= */
+/* ================================================================================================================================= */
+
 section#about-me > h1 {
 	font-size: 3em;
 	font-weight: 200;
@@ -47,7 +58,47 @@ section#about-me > div {
 	padding: 0.1em 1em 0.1em 2em;
 }
 
-section#projects > h2 { font-size: 2em; font-weight: 400; }
+/* ================================================================================================================================= */
+/* ================================================================================================================================= */
+
+section.project-info { margin-top: 0; }
+
+section.project-info > h2 {
+	font-weight: 400;
+	font-size: 1.4em;
+	margin-bottom: 1.5em;
+}
+
+section.project-info > div {
+	border: 0.15em solid #498f87;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 0;
+	padding: 0.1em 1.5em 0.1em 2em;
+}
+
+section.project-info > div > p { margin-bottom: 2em; }
+
+section.project-info a { 
+	padding: 0.5em; 
+	border-width: 0.15em; 
+	transition: color 0.2s ease-in;
+}
+
+section.project-info a:hover { color: #fff; }
+
+section.project-info > div > div { display: flex; flex-wrap: wrap; }
+
+section.project-info > div > div > a { margin-right: 2em; }
+
+/* ================================================================================================================================= */
+/* ================================================================================================================================= */
+
+section#projects > h2 { 
+	font-size: 2em; 
+	font-weight: 400;
+	margin-bottom: 1em;
+}
 
 section#projects > div {
 	position: absolute;
@@ -60,11 +111,10 @@ section#projects > div {
 	z-index: -1;
 }
 
-section#projects > ul { padding: 2em 0 0 2em; }
+section#projects > ul { padding-top: 1em; padding-left: 1em; }
 
 section#projects > ul > li {
-	padding: 0.1em;
-	margin-bottom: 1em;
+	padding: 1em 0 0.5em 1em;
 }
 
 section#projects > ul > li > a {
@@ -75,18 +125,24 @@ section#projects > ul > li > a:hover {
 	font-size: 1.1em;
 	color: #fff;
 }
-
-footer {
-	margin-bottom: 1em;
-}
-
-footer > p{
-	text-align: center;
-}
+/* ================================================================================================================================= */
+/* ================================================================================================================================= */
 
 .svg-color1 { fill: #777777; }
 
 .svg-color2 { fill: #cccccc; }
+
+.nav-icon {
+	width: 25px;
+	height: 25px;
+	margin: 0.75em;
+	transition: transform 0.2s;
+}
+
+.nav-icon:hover { cursor: pointer; transform: scale(1.2); }
+
+/* ================================================================================================================================= */
+/* ================================================================================================================================= */
 
 #nav-logo {
 	display: inline-block;
@@ -106,15 +162,6 @@ footer > p{
 
 #logo-icon:hover { cursor: pointer; transform: scale(1.1); }
 
-.nav-icon {
-	width: 25px;
-	height: 25px;
-	margin: 0.75em;
-	transition: transform 0.2s;
-}
-
-.nav-icon:hover { cursor: pointer; transform: scale(1.2); }
-
 #github-icon:hover path:nth-child(1) {
 	fill: rgb(209, 209, 209);
 }
@@ -126,3 +173,15 @@ footer > p{
 #npm-icon:hover path:nth-child(2) {
 	fill: #ff0000;
 }
+
+#about-me { display: static; }
+
+#about-domposer { display: none; }
+
+#about-bay-js { display: none; }
+
+#about-cookiemunch { display: none; }
+
+#about-screen-time-converter { display: none; }
+
+#about-inline-svg { display: none; }

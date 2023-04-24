@@ -1,8 +1,28 @@
 body {
-	background-color: #1d1d20;
 	margin: 0;
 	padding: 0;
+	background-color: #1d1d20;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14.5px;
+	color: rgb(209, 209, 209);
 }
+
+p { margin: 0; line-height: 1.5em; }
+
+a { 
+	color: rgb(209, 209, 209);
+	text-decoration: none;
+	border: 0.5em solid #498f87;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+ul li { list-style: none; overflow: hidden; }
 
 nav {
 	display: flex;
@@ -10,14 +30,63 @@ nav {
 	align-items: center;
 }
 
+section { margin: 0.5em 0 5em 1.5em; }
 
-.svg-color1 {
-	fill: #777777;
+section#about-me > h1 {
+	font-size: 3em;
+	font-weight: 200;
+	margin: 0;
+	margin-bottom: 1em;
 }
 
-.svg-color2 {
-	fill: #cccccc;
+section#about-me > div {
+	border: 0.15em solid #498f87;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 0;
+	padding: 0.1em 1em 0.1em 2em;
 }
+
+section#projects > h2 { font-size: 2em; font-weight: 400; }
+
+section#projects > div {
+	position: absolute;
+	border: 0.25em solid #498f87;
+	border-right: 0;
+	border-bottom: 0;
+	border-radius: 0.5em 0;
+	width: 6em;
+	height: 5em;
+	z-index: -1;
+}
+
+section#projects > ul { padding: 2em 0 0 2em; }
+
+section#projects > ul > li {
+	padding: 0.1em;
+	margin-bottom: 1em;
+}
+
+section#projects > ul > li > a {
+	transition: font-size 0.2s ease-out;
+}
+
+section#projects > ul > li > a:hover {
+	font-size: 1.1em;
+	color: #fff;
+}
+
+footer {
+	margin-bottom: 1em;
+}
+
+footer > p{
+	text-align: center;
+}
+
+.svg-color1 { fill: #777777; }
+
+.svg-color2 { fill: #cccccc; }
 
 #nav-logo {
 	display: inline-block;
@@ -35,14 +104,7 @@ nav {
 	transition: transform 0.2s;
 }
 
-#logo-icon:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-}
-
-#nav-icons {
-
-}
+#logo-icon:hover { cursor: pointer; transform: scale(1.1); }
 
 .nav-icon {
 	width: 25px;
@@ -51,7 +113,16 @@ nav {
 	transition: transform 0.2s;
 }
 
-.nav-icon:hover {
-	cursor: pointer;
-	transform: scale(1.2);
+.nav-icon:hover { cursor: pointer; transform: scale(1.2); }
+
+#github-icon:hover path:nth-child(1) {
+	fill: rgb(209, 209, 209);
+}
+
+#npm-icon:hover path:nth-child(1) {
+	fill: rgb(209, 209, 209);
+}
+
+#npm-icon:hover path:nth-child(2) {
+	fill: #ff0000;
 }

@@ -1,0 +1,57 @@
+body {
+	background-color: #1d1d20;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.svg-color1 {
+	fill: #777777;
+}
+
+.svg-color2 {
+	fill: #cccccc;
+}
+
+#nav-logo {
+	display: inline-block;
+	border: 1px solid #498f87;
+	border-bottom: 0;
+	border-right: 0;
+	border-width: 0.5em;
+	border-radius: 0.5em 0;
+}
+
+#logo-icon {
+	width: 45px;
+	height: 45px;
+	margin: 1em 2em 1.5em 0.75em;
+	transition: transform 0.2s;
+}
+
+#logo-icon:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+#nav-icons {
+
+}
+
+.nav-icon {
+	width: 25px;
+	height: 25px;
+	margin: 0.75em;
+	transition: transform 0.2s;
+}
+
+.nav-icon:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}

@@ -141,6 +141,14 @@ section#projects > ul > li > a:hover {
 
 .nav-icon:hover { cursor: pointer; transform: scale(1.2); }
 
+.display-none { display: none; }
+
+.display-block { display: block; }
+
+.transition-display { 
+	transition: display 1s ease-in-out;
+}
+
 /* ================================================================================================================================= */
 /* ================================================================================================================================= */
 
@@ -162,26 +170,9 @@ section#projects > ul > li > a:hover {
 
 #logo-icon:hover { cursor: pointer; transform: scale(1.1); }
 
-#github-icon:hover path:nth-child(1) {
-	fill: rgb(209, 209, 209);
-}
-
-#npm-icon:hover path:nth-child(1) {
-	fill: rgb(209, 209, 209);
-}
+#github-icon:hover path:nth-child(1),
+#npm-icon:hover path:nth-child(1) { fill: rgb(209, 209, 209); }
 
 #npm-icon:hover path:nth-child(2) {
 	fill: #ff0000;
 }
-
-#about-me { display: static; }
-
-#about-domposer { display: none; }
-
-#about-bay-js { display: none; }
-
-#about-cookiemunch { display: none; }
-
-#about-screen-time-converter { display: none; }
-
-#about-inline-svg { display: none; }

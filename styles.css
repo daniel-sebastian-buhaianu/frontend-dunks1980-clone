@@ -1,3 +1,7 @@
+/* ============================================= */
+/* || GENERAL SELECTORS */
+/* ============================================= */
+
 * { margin: 0; padding: 0; }
 
 body {
@@ -30,69 +34,64 @@ nav {
 	align-items: center;
 }
 
-section { margin: 0.5em 0 5em 1.5em; }
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+section { margin: 0.5em 0em 3em 1.5em; }
 
 footer {
 	margin-bottom: 1em;
 }
 
-footer > p{
-	text-align: center;
-}
+/* ============================================= */
+/* || ABOUT SECTION */
+/* ============================================= */
 
-/* ================================================================================================================================= */
-/* ================================================================================================================================= */
-
-section#about-me > h1 {
+article#about-me > h1 {
 	font-size: 3em;
 	font-weight: 200;
 	margin: 0;
 	margin-bottom: 1em;
 }
 
-section#about-me > div {
-	border: 0.15em solid #498f87;
-	border-top: 0;
-	border-right: 0;
-	border-bottom: 0;
+article#about-me > div {
 	padding: 0.1em 1em 0.1em 2em;
+	border-top: 0; border-radius: 0;
 }
 
-/* ================================================================================================================================= */
-/* ================================================================================================================================= */
+article.project-info { margin-top: 0; }
 
-section.project-info { margin-top: 0; }
-
-section.project-info > h2 {
+article.project-info > h2 {
 	font-weight: 400;
 	font-size: 1.4em;
 	margin-bottom: 1.5em;
 }
 
-section.project-info > div {
-	border: 0.15em solid #498f87;
-	border-top: 0;
-	border-right: 0;
-	border-bottom: 0;
+article.project-info > div.with-border {
 	padding: 0.1em 1.5em 0.1em 2em;
+	border-top: 0; border-radius: 0;
 }
 
-section.project-info > div > p { margin-bottom: 2em; }
+article.project-info > div > p { margin-bottom: 2em; }
 
-section.project-info a { 
+article.project-info a { 
 	padding: 0.5em; 
 	border-width: 0.15em; 
 	transition: color 0.2s ease-in;
 }
 
-section.project-info a:hover { color: #fff; }
+article.project-info a:hover { color: #fff; }
 
-section.project-info > div > div { display: flex; flex-wrap: wrap; }
+article.project-info > div > div { display: flex; flex-wrap: wrap; }
 
-section.project-info > div > div > a { margin-right: 2em; }
+article.project-info > div > div > a { margin-right: 2em; }
 
-/* ================================================================================================================================= */
-/* ================================================================================================================================= */
+
+/* ============================================= */
+/* || PROJECTS SECTION */
+/* ============================================= */
 
 section#projects > h2 { 
 	font-size: 2em; 
@@ -102,10 +101,6 @@ section#projects > h2 {
 
 section#projects > div {
 	position: absolute;
-	border: 0.25em solid #498f87;
-	border-right: 0;
-	border-bottom: 0;
-	border-radius: 0.5em 0;
 	width: 6em;
 	height: 5em;
 	z-index: -1;
@@ -125,8 +120,10 @@ section#projects > ul > li > a:hover {
 	font-size: 1.1em;
 	color: #fff;
 }
-/* ================================================================================================================================= */
-/* ================================================================================================================================= */
+
+/* ============================================= */
+/* || CLASSES ONLY */
+/* ============================================= */
 
 .svg-color1 { fill: #777777; }
 
@@ -141,24 +138,26 @@ section#projects > ul > li > a:hover {
 
 .nav-icon:hover { cursor: pointer; transform: scale(1.2); }
 
-.display-none { display: none; }
+.hide{ display: none; }
 
-.display-block { display: block; }
+.text-center { text-align: center; }
 
-.transition-display { 
-	transition: display 1s ease-in-out;
-}
-
-/* ================================================================================================================================= */
-/* ================================================================================================================================= */
-
-#nav-logo {
-	display: inline-block;
+.with-border {
 	border: 1px solid #498f87;
 	border-bottom: 0;
 	border-right: 0;
-	border-width: 0.5em;
+	border-width: 0.2em;
 	border-radius: 0.5em 0;
+}
+
+
+/* ============================================= */
+/* || IDS ONLY */
+/* ============================================= */
+
+#nav-logo {
+	display: inline-block;
+	border-width: 0.5em;
 }
 
 #logo-icon {

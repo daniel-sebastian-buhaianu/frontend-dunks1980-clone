@@ -13,7 +13,7 @@
 
 	<body>
 		<nav>
-			<div id="nav-logo">
+			<div id="nav-logo" class="with-border">
 				<svg id="logo-icon" viewBox="0 0 259.23 343.78">
 					<path class="svg-color1" d="M915 419.1c22.75 1.32 45.5 2.69 68.26 3.89 3.74.2 2.67 2.69 2.67 4.59q.09 39 0 78c0 8.65 0 8.58 8.53 7.83 7-.61 13.93-1.14 20.91-1.49a27.35 27.35 0 0 0 19.27-9.14c19-20.15 18.24-63.83-1.61-83.18a22.94 22.94 0 0 0-15-7c-7-.4-13.94-1-20.92-1.29-2.16-.1-3.22-.37-3.21-3 .08-33.13.06-66.27.06-98.74 37.75.43 63.34 19.89 80.84 51.71 15.54 28.26 22.68 58.83 24 90.8 1.44 35.39-3.86 69.7-18.92 102-9.71 20.87-22.75 39.08-43.44 50.66-10.09 5.65-21.42 7-32.41 9.46q-43.26 9.86-86.57 19.52a11.85 11.85 0 0 1-2.46.07V419.1Z" transform="translate(-839.8 -290.1)"></path>
 					<path class="svg-color2" d="M915 419.1v214.75q-26.28-5.64-52.56-11.3c-6.16-1.33-12.28-2.92-18.48-4-3.28-.58-4.17-1.95-4.15-5.23.14-27.45.08-54.91.08-82.36 0-34.44.06-68.88-.09-103.31 0-3.6.86-4.85 4.55-5 23.56-1.03 47.07-3.12 70.65-3.55ZM915 404.67c-23.69 1.79-47.39 3.53-71.07 5.44-3.43.28-4.14-.88-4.13-4.06.1-31.94 0-63.88.06-95.82 0-2-.34-3.71 2.64-4.35 23.85-5.14 47.65-10.49 71.48-15.76a3.34 3.34 0 0 1 1 .06Z" transform="translate(-839.8 -290.1)"></path>
@@ -40,87 +40,91 @@
 			</div>
 		</nav>
 
-		<section id="about-me" class="display-block transition-display">
-			<h1>Welcome.</h1>
-			<div>
-				<p>My name is Ian Dunkerley, I'm a front-end developer based in Torquay, Devon, UK.
-					I have developed many types of front-ends from well known DJ applications to
-				Ecommerce booking platforms.</p>
-				<br>
-				<p>I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces
-				and intuitively implemented UX.</p>
-			</div>
-		</section>
+		<main>
+			<section id="about">
+				<article id="about-me" class="">
+					<h1>Welcome.</h1>
+					<div class="with-border">
+						<p>My name is Ian Dunkerley, I'm a front-end developer based in Torquay, Devon, UK.
+							I have developed many types of front-ends from well known DJ applications to
+						Ecommerce booking platforms.</p>
+						<br>
+						<p>I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces
+						and intuitively implemented UX.</p>
+					</div>
+				</article>
 
-		<section id="about-domposer" class="project-info display-none transition-display">
-			<h2>Domposer</h2>
-			<div> 
-				<p>Domposer is a website builder which has a UI that allows you to quickly add and rearrange HTML and CSS, upload and download created projects and files, login to save upto 5 projects and can be installed as a progressive web application. The stack is Laravel for the backend/API's and vanilla JS for the frontend. The git repository for this one is private at the moment.</p>
-				<a href="#">View Site</a>
-			</div>
-		</section>
+				<article id="about-domposer" class="project-info hide">
+					<h2>Domposer</h2>
+					<div class="with-border"> 
+						<p>Domposer is a website builder which has a UI that allows you to quickly add and rearrange HTML and CSS, upload and download created projects and files, login to save upto 5 projects and can be installed as a progressive web application. The stack is Laravel for the backend/API's and vanilla JS for the frontend. The git repository for this one is private at the moment.</p>
+						<a href="#">View Site</a>
+					</div>
+				</article>
 
-		<section id="about-bay-js" class="project-info display-none transition-display">
-			<h2>Bay.js</h2>
-			<div>
-				<p>An easy to use, lightweight library for web-components. It doesn't need a build step but can be included in a build step if you want to. It's a great way to create reusable components for your projects. It's available as a NPM package and doesn't use any dependencies and is 11kb minified. It also doesn't use eval or new Function so can be used in strict CSP polices without a build step. </p>
-				<div>
-					<a href="#">View Site</a>
-					<a href="#">Github</a>
-					<a href="#">NPM</a>
-				</div>
-			</div>
-		</section>
+				<article id="about-bay-js" class="project-info hide">
+					<h2>Bay.js</h2>
+					<div class="with-border">
+						<p>An easy to use, lightweight library for web-components. It doesn't need a build step but can be included in a build step if you want to. It's a great way to create reusable components for your projects. It's available as a NPM package and doesn't use any dependencies and is 11kb minified. It also doesn't use eval or new Function so can be used in strict CSP polices without a build step. </p>
+						<div>
+							<a href="#">View Site</a>
+							<a href="#">Github</a>
+							<a href="#">NPM</a>
+						</div>
+					</div>
+				</article>
 
-		<section id="about-cookiemunch" class="project-info display-none transition-display">
-			<h2>Cookiemunch</h2>
-			<div>
-				<p>A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible. </p>
-				<div>
-					<a href="#">View Site</a>
-					<a href="#">Github</a>
-					<a href="#">NPM</a>
-				</div>
-			</div>
-		</section>
+				<article id="about-cookiemunch" class="project-info hide">
+					<h2>Cookiemunch</h2>
+					<div class="with-border">
+						<p>A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible. </p>
+						<div>
+							<a href="#">View Site</a>
+							<a href="#">Github</a>
+							<a href="#">NPM</a>
+						</div>
+					</div>
+				</article>
 
-		<section id="about-screen-time-converter" class="project-info display-none transition-display">
-			<h2>Screen time converter</h2>
-			<div>
-				<p>Count the time your children spend on activities like homework, chores and exercise and convert it into screen time. I created this with Vue.js and the Howlr libary to add the interactive clock sounds. It can be installed as a progressive web application and is also available from the google play store. The git repository for this one is private at the moment. </p>
-				<div>
-					<a href="#">View Site</a>
-					<a href="#">View on Google Play Store</a>
-				</div>
-			</div>
-		</section>
+				<article id="about-screen-time-converter" class="project-info hide">
+					<h2>Screen time converter</h2>
+					<div class="with-border">
+						<p>Count the time your children spend on activities like homework, chores and exercise and convert it into screen time. I created this with Vue.js and the Howlr libary to add the interactive clock sounds. It can be installed as a progressive web application and is also available from the google play store. The git repository for this one is private at the moment. </p>
+						<div>
+							<a href="#">View Site</a>
+							<a href="#">View on Google Play Store</a>
+						</div>
+					</div>
+				</article>
 
-		<section id="about-inline-svg" class="project-info display-none transition-display">
-			<h2>inline.svg</h2>
-			<div>
-				<p>This is a NPM package that takes an SVG file and renders it as a inline SVG to the DOM and can also render HTML files too. You can also pass data to it that renders where its specified inside double curly braces. I created this to solve problems with some frameworks and bundlers when using inline SVG files and to keep code cleaner and easier to read. </p>
-				<div>
-					<a href="#">View Site</a>
-					<a href="#">Github</a>
-					<a href="#">NPM</a>
-				</div>
-			</div>
-		</section>
+				<article id="about-inline-svg" class="project-info hide">
+					<h2>inline.svg</h2>
+					<div class="with-border">
+						<p>This is a NPM package that takes an SVG file and renders it as a inline SVG to the DOM and can also render HTML files too. You can also pass data to it that renders where its specified inside double curly braces. I created this to solve problems with some frameworks and bundlers when using inline SVG files and to keep code cleaner and easier to read. </p>
+						<div>
+							<a href="#">View Site</a>
+							<a href="#">Github</a>
+							<a href="#">NPM</a>
+						</div>
+					</div>
+				</article>
+			</section>
 
-		<section id="projects">
-			<h2>Projects</h2>
-			<div><!-- cool left border above <ul> --></div>
-			<ul>
-				<li><a id="domposer" href="#">Domposer</a></li>
-				<li><a id="bay-js" href="#">Bay.js</a></li>
-				<li><a id="cookiemunch" href="#">Cookiemunch</a></li>
-				<li><a id="screen-time-converter" href="#">Screen time converter</a></li>
-				<li><a id="inline-svg" href="#">inline.svg</a></li>
-			</ul>
-		</section>
+			<section id="projects">
+				<h2>Projects</h2>
+				<div class="with-border"><!-- cool left border above <ul> --></div>
+				<ul>
+					<li><a id="domposer" href="#">Domposer</a></li>
+					<li><a id="bay-js" href="#">Bay.js</a></li>
+					<li><a id="cookiemunch" href="#">Cookiemunch</a></li>
+					<li><a id="screen-time-converter" href="#">Screen time converter</a></li>
+					<li><a id="inline-svg" href="#">inline.svg</a></li>
+				</ul>
+			</section>
+		</main>
 
 		<footer>
-			<p>&copy;2023 dsb99.dev</p>
+			<p class="text-center">&copy;2023 dsb99.dev</p>
 		</footer>
 
 		<script src="scripts.js"></script>

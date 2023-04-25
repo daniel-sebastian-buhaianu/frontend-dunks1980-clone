@@ -35,15 +35,15 @@ a:hover { cursor: pointer; }
 
 ul li { list-style: none; overflow: hidden; }
 
+nav, main { display: flex }
+
 nav {
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.5em;
 }
 
-main { display: flex; flex-direction: column;
-}
+main { flex-direction: column; }
 
 section { margin: 0.5em 0em 3em 1.5em; }
 
@@ -57,21 +57,16 @@ section#about { margin-top: 0; }
 
 article#about-me > h1 { margin: 0 0 1em 0; }
 
-article#about-me > div {
-	padding: 0.1em 1em 0.1em 2em;
+article#about-me > div { padding: 0.1em 1em 0.1em 2em; }
+
+article#about-me > div,
+article.project-info > div.with-border {
 	border-top: 0; border-radius: 0;
 }
-
-/* ============================================= */
-/* || PROJECT-INFO*/
-/* ============================================= */
 
 article.project-info > h3 { margin-bottom: 1.5em; }
 
-article.project-info > div.with-border {
-	padding: 0.1em 1.5em 0.1em 2em;
-	border-top: 0; border-radius: 0;
-}
+article.project-info > div.with-border { padding: 0.1em 1.5em 0.1em 2em; }
 
 article.project-info > div > p { margin-bottom: 2em; }
 
@@ -101,23 +96,13 @@ section#projects > div {
 	z-index: -1;
 }
 
-section#projects > ul { 
-	padding-top: 1em; 
-	padding-left: 1em; 
-}
+section#projects > ul { padding-top: 1em; padding-left: 1em; }
 
-section#projects > ul > li {
-	padding: 1em 0 0.5em 1em;
-}
+section#projects > ul > li { padding: 1em 0 0.5em 1em; }
 
-section#projects > ul > li > a {
-	transition: all 0.2s ease-in-out;
-}
+section#projects > ul > li > a { transition: all 0.2s ease-in-out; }
 
-section#projects > ul > li > a:hover {
-	letter-spacing: 1px;
-	color: #fff;
-}
+section#projects > ul > li > a:hover { letter-spacing: 1px; color: #fff; }
 
 /* ============================================= */
 /* || CLASSES ONLY */
@@ -140,9 +125,8 @@ section#projects > ul > li > a:hover {
 
 .text-center { text-align: center; }
 
-.with-border, .with-border-reversed {
-	border: 1px solid #498f87;
-}
+.with-border, 
+.with-border-reversed { border: 1px solid #498f87; }
 
 .with-border {
 	border-bottom: 0;
@@ -162,10 +146,7 @@ section#projects > ul > li > a:hover {
 /* || IDS ONLY */
 /* ============================================= */
 
-#nav-logo {
-	display: inline-block;
-	border-width: 0.5em;
-}
+#nav-logo { display: inline-block; border-width: 0.5em; }
 
 #logo-icon {
 	width: 50px;
@@ -183,7 +164,8 @@ section#projects > ul > li > a:hover {
 	fill: #ff0000;
 }
 
-#top-corner-border, #bottom-corner-border { position: absolute; z-index: -999; }
+#top-corner-border, 
+#bottom-corner-border { position: absolute; z-index: -999; }
 
 #top-corner-border {
 	top: 0;
@@ -215,9 +197,7 @@ section#projects > ul > li > a:hover {
 		border-width: 1.5em;
 	}
 
-	#top-corner-border {
-		border-radius: 1.5em 0 0 0;
-	}
+	#top-corner-border { border-radius: 1.5em 0 0 0; }
 
 	#bottom-corner-border {
 		bottom: 0;

@@ -1,5 +1,5 @@
-/*
 const handleClick = (event) => {
+
 	const aboutMeArticle = document.getElementById("about-me");
 	const visibleArticle = document.querySelector("section#about article.visible");
 
@@ -10,12 +10,13 @@ const handleClick = (event) => {
 	}
 
 	if (visibleArticle !== targetArticle) {
-		visibleArticle.className = visibleArticle.className.replace("visible", "hidden");
+
 		targetArticle.className = targetArticle.className.replace("hidden", "visible");
+		visibleArticle.className = visibleArticle.className.replace("visible", "hidden");
 	}
 	else
 	{
-		if (visibleArticle.id !== "about-me") {
+		if (visibleArticle !== aboutMeArticle) {
 			visibleArticle.className = visibleArticle.className.replace("visible", "hidden");
 			aboutMeArticle.className = aboutMeArticle.className.replace("hidden", "visible");
 		}
@@ -30,4 +31,3 @@ for (aTag of projectsATags) {
 }
 
 document.getElementById("logo-icon").addEventListener("click", e => handleClick(e));
-*/

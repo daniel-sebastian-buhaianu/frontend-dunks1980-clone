@@ -4,6 +4,8 @@
 
 * { margin: 0; padding: 0; }
 
+body, html { overflow-x: hidden; }
+
 body {
 	background-color: #1d1d20;
 	font-family: 'Montserrat', sans-serif;
@@ -46,7 +48,7 @@ footer {
 }
 
 /* ============================================= */
-/* || ABOUT SECTION */
+/* || ABOUT */
 /* ============================================= */
 
 article#about-me > h1 {
@@ -61,7 +63,9 @@ article#about-me > div {
 	border-top: 0; border-radius: 0;
 }
 
-article.project-info { margin-top: 0; }
+/* ============================================= */
+/* || PROJECT-INFO*/
+/* ============================================= */
 
 article.project-info > h2 {
 	font-weight: 400;
@@ -90,7 +94,7 @@ article.project-info > div > div > a { margin-right: 2em; }
 
 
 /* ============================================= */
-/* || PROJECTS SECTION */
+/* || PROJECTS */
 /* ============================================= */
 
 section#projects > h2 { 
@@ -138,7 +142,7 @@ section#projects > ul > li > a:hover {
 
 .nav-icon:hover { cursor: pointer; transform: scale(1.2); }
 
-.hide{ display: none; }
+.hidden { display: none; }
 
 .text-center { text-align: center; }
 

@@ -101,18 +101,21 @@ section#projects > div {
 	z-index: -1;
 }
 
-section#projects > ul { padding-top: 1em; padding-left: 1em; }
+section#projects > ul { 
+	padding-top: 1em; 
+	padding-left: 1em; 
+}
 
 section#projects > ul > li {
 	padding: 1em 0 0.5em 1em;
 }
 
 section#projects > ul > li > a {
-	transition: font-size 0.2s ease-out;
+	transition: all 0.2s ease-in-out;
 }
 
 section#projects > ul > li > a:hover {
-	font-size: 1.1em;
+	letter-spacing: 1px;
 	color: #fff;
 }
 
@@ -198,11 +201,13 @@ section#projects > ul > li > a:hover {
 
 @media screen and (min-width: 500px) {
 
-	body { padding: 2em; }
+	body { height: 93vh; padding: 2em; }
 
 	footer { text-align: right; padding: 0.2em 1.5em; }
 
 	article#about-me > h1 { margin-bottom: 0.1em; }
+
+	footer { position: absolute; bottom: 3%; right: 4%; }
 
 	#top-corner-border, #bottom-corner-border {
 		height: 19em;
@@ -224,7 +229,7 @@ section#projects > ul > li > a:hover {
 
 @media screen and (min-width: 900px) {
 
-	body { height: 92vh; }
+	body { height: 93vh; }
 
 	h1 { font-size: 7vw; }
 
@@ -246,7 +251,9 @@ section#projects > ul > li > a:hover {
 		margin-bottom: 0;
 	}
 
-	section#projects { }
+	section#projects { width: 30%; }
+
+	section#projects ul li { padding: 1em; }
 
 	section#about a { font-size: 1.2em; }
 

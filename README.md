@@ -1,5 +1,5 @@
-# portfolio-site-dunks1980
+# dunks1980
 
-practising my html & css skills 
-by rebuilding this beautiful portfolio site: https://dunks1980.com/
-using vanilla html and css - no bootstrap/3rd party libraries.
+Original: https://dunks1980.com/
+
+My implementation: https://dsb99.app/dunks1980
